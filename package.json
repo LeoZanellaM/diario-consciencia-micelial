@@ -1,0 +1,13 @@
+{
+  "name": "diario-consciencia-micelial",
+  "version": "1.0.0",
+  "description": "Backend do Diário da Consciência Micelial com Strapi",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build"
+  },
+  "dependencies": {
+    "@strapi/strapi": "^4.16.2"
+  }
+}
