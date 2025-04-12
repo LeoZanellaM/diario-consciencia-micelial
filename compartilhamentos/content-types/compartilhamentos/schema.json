@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compartilhamentos",
+  "info": {
+    "singularName": "compartilhamento",
+    "pluralName": "compartilhamentos",
+    "displayName": "Compartilhamentos",
+    "description": "V\u00ednculo entre usu\u00e1rio e terapeuta"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "usuario": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "terapeuta": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::terapeuta.terapeuta"
+    },
+    "data_inicio": {
+      "type": "date"
+    },
+    "data_fim": {
+      "type": "date"
+    }
+  }
+}

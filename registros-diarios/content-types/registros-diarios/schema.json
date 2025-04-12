@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registros-diarios",
+  "info": {
+    "singularName": "registro-diario",
+    "pluralName": "registros-diarios",
+    "displayName": "Registros Diarios",
+    "description": "Registros di\u00e1rios do usu\u00e1rio com indicadores e uso de psicod\u00e9licos"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "data": {
+      "type": "date"
+    },
+    "indicadores": {
+      "type": "json"
+    },
+    "uso_psicodelicos": {
+      "type": "boolean"
+    },
+    "tipo_dose": {
+      "type": "enumeration",
+      "enum": [
+        "microdose",
+        "macrodose"
+      ]
+    },
+    "substancia": {
+      "type": "string"
+    },
+    "dosagem": {
+      "type": "string"
+    },
+    "observacoes": {
+      "type": "text"
+    }
+  }
+}
